@@ -1,6 +1,12 @@
-let string = "equipe";
-let vogais = ["A", "E", "I", "O", "U", "a", "e", "i","o", "u"];
+let palavra = "morango";
+let vogais = ['a', 'e', 'i', 'o', 'u'];
+let palavraMinuscula = palavra.toLowerCase();
 
-let mapear = string.map(string(vogais));
+let caracteres = palavraMinuscula.split('');
+let vogaisEncontradas = caracteres.filter(letra => vogais.includes(letra));
+let numeroVogais = palavra;
+let numero = vogaisEncontradas.length;
 
-console.log(mapear);
+console.log("Texto: " + palavra);
+console.log("Número totais de voagis: " + numero);
+console.log("Vogais encontradas: " + vogaisEncontradas.join(", "));
